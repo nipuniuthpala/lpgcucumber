@@ -138,12 +138,7 @@
             <artifactId>cucumber-junit</artifactId>
             <version>4.4.0</version>
         </dependency>
-        <dependency>
-            <groupId>cucumber</groupId>
-            <artifactId>cucumber-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
