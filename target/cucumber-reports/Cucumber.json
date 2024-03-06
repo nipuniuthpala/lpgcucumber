@@ -1,0 +1,222 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Validate user can be created",
+        "description": "",
+        "id": "test-the-apis-and-check-the-data-is-correctly-displayed;validate-user-can-be-created",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2456717888,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user invoke the api for users",
+            "match": {
+              "location": "APITest.getUsers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 404761319,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user will get 201 response",
+            "match": {
+              "location": "APITest.validate201()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 778003853,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user will see all the users",
+            "match": {
+              "location": "APITest.validateUserDetails()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Validate all users get retrieved",
+        "description": "",
+        "id": "test-the-apis-and-check-the-data-is-correctly-displayed;validate-all-users-get-retrieved;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 154950355,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user invoke the api for \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 25
+                }
+              ],
+              "location": "APITest.getSingleUsers(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 98729886,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user will get 200 response for users \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 42
+                }
+              ],
+              "location": "APITest.validate200ForUsers(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2448261018,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user will see all the users \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 29
+                }
+              ],
+              "location": "APITest.validateUserDetails(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Validate user can be updated",
+        "description": "",
+        "id": "test-the-apis-and-check-the-data-is-correctly-displayed;validate-user-can-be-updated;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 128429374,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user invoke the api for update \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 32
+                }
+              ],
+              "location": "APITest.updateUser(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133243758,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user will get update 200 response \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 39
+                }
+              ],
+              "location": "APITest.validate200ForUpdateUsers(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 271572827,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user will see the updated \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 27
+                }
+              ],
+              "location": "APITest.validateUpdatedUserDetails(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Test the APIs and check the data is correctly displayed",
+    "description": "",
+    "id": "test-the-apis-and-check-the-data-is-correctly-displayed",
+    "keyword": "Feature",
+    "uri": "TestSite.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@test"
+      }
+    ]
+  }
+]

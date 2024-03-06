@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0"
+           name="cucumber.runtime.formatter.JUnitFormatter"
+           skipped="0"
+           tests="3"
+           time="6.87467">
+   <testcase classname="Test the APIs and check the data is correctly displayed"
+             name="Validate user can be created"
+             time="3.639483">
+      <system-out>Given user invoke the api for users.........................................passed
+When the user will get 201 response.........................................passed
+Then user will see all the users............................................passed
+</system-out>
+   </testcase>
+   <testcase classname="Test the APIs and check the data is correctly displayed"
+             name="Validate all users get retrieved"
+             time="2.701941">
+      <system-out>Given user invoke the api for "1"...........................................passed
+When the user will get 200 response for users "1"...........................passed
+Then user will see all the users "1"........................................passed
+</system-out>
+   </testcase>
+   <testcase classname="Test the APIs and check the data is correctly displayed"
+             name="Validate user can be updated"
+             time="0.533246">
+      <system-out>Given user invoke the api for update "2"....................................passed
+When the user will get update 200 response "2"..............................passed
+Then user will see the updated "2"..........................................passed
+</system-out>
+   </testcase>
+</testsuite>
